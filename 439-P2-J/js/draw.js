@@ -1,4 +1,4 @@
-// Justin Huang 
+// Justin Huang
 // creates a multi dimentional array 
 var size1 = 20;
 var size2 = 41;
@@ -35,8 +35,6 @@ function createGrid()
 	}
 }
 
-/* Function was found online */
- /*link: https://stackoverflow.com/questions/966225/how-can-i-create-a-two-dimensional-array-in-javascript */
 function createMat(length)
 {
       var array = new Array(length || 0), y = length;
@@ -73,45 +71,77 @@ function fillMat()
       {
         
         if(matrix[i-1][j]==1 && matrix[i-1][j+1]==1)//rule 5
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
         if(matrix[i-1][j]==1 && matrix[i-1][j+1]==0)//rule 6
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j]==0 && matrix[i-1][j+1]==1)//rule 7
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j]==0 && matrix[i-1][j+1]==0)//rule 8
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
       }
       else if(j==(size2-1))
       {
         
         if(matrix[i-1][j-1]==1 && matrix[i-1][j]==1)//rule 2
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
         if(matrix[i-1][j-1]==1 && matrix[i-1][j]==0)//rule 4
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j-1]==0 && matrix[i-1][j]==1)//rule 6
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j-1]==0 && matrix[i-1][j]==0)//rule 8
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
       }
       else
       {
         
         if(matrix[i-1][j-1]==1 && matrix[i-1][j]==1 && matrix[i-1][j+1]==1)//rule 1
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j-1]==1 && matrix[i-1][j]==1 && matrix[i-1][j+1]==0)//rule 2
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
         if(matrix[i-1][j-1]==1 && matrix[i-1][j]==0 && matrix[i-1][j+1]==1)//rule 3
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
         if(matrix[i-1][j-1]==1 && matrix[i-1][j]==0 && matrix[i-1][j+1]==0)//rule 4
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j-1]==0 && matrix[i-1][j]==1 && matrix[i-1][j+1]==1)//rule 5
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
         if(matrix[i-1][j-1]==0 && matrix[i-1][j]==1 && matrix[i-1][j+1]==0)//rule 6
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j-1]==0 && matrix[i-1][j]==0 && matrix[i-1][j+1]==1)//rule 7
-          matrix[i][j]=1;
+			{
+				matrix[i][j]=1;
+			}
         if(matrix[i-1][j-1]==0 && matrix[i-1][j]==0 && matrix[i-1][j+1]==0)//rule 8
-          matrix[i][j]=0;
+			{
+				matrix[i][j]=0;
+			}
       }
     }
   }
