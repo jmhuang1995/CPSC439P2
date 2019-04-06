@@ -1,3 +1,4 @@
+// Justin Huang 
 // creates a multi dimentional array 
 var size1 = 20;
 var size2 = 41;
